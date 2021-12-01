@@ -258,7 +258,11 @@ const Services = () => {
           ></Grid>
           <Grid css={css(containerCSS)}>
             <Grid container css={css`flex-wrap: nowrap !important;`}>
-              <Grid item sm={4} css={css`margin-top: 4rem;max-width: 45rem;`}>
+              <Grid
+                item
+                sm={4}
+                css={css`margin-top: 2rem!important;max-width: 45rem;z-index:2;`}
+              >
                 <Grid
                   css={css`&>span{display: block;font-size: 3.8rem;line-height: 3.8rem;}`}
                 >
@@ -284,7 +288,8 @@ const Services = () => {
               <Grid
                 item
                 sm={4}
-                css={css`max-width: 30rem !important;margin: 0 2rem 0 3rem !important;`}
+                className="text-center hidden-xs"
+                css={css`max-width: 30rem !important;margin: 0 2rem 0 3rem !important;z-index:2;@media (min-width: 600px){margin: 0 !important;}`}
               >
                 <Grid container>
                   {[
@@ -329,10 +334,10 @@ const Services = () => {
               <Grid
                 item
                 sm={4}
-                css={css`margin-top: 3rem !important;max-width: 30rem !important;`}
+                css={css`margin-top: 3rem !important;max-width: 30rem !important;z-index:2;`}
+                className="text-center hidden-xs hidden-sm"
               >
                 <Typography
-                  class="text-center hidden-xs hidden-sm"
                   variant={'h6'}
                   css={css`text-transform: uppercase;font-size: 1.8rem;line-height: 1.9rem;font-weight: bold;text-align: center;`}
                 >
