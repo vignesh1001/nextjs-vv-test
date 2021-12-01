@@ -261,7 +261,7 @@ const Services = () => {
               <Grid
                 item
                 sm={4}
-                css={css`margin-top: 2rem!important;max-width: 45rem;z-index:2;`}
+                css={css`margin-top: 2rem!important;max-width: 45rem !important;z-index:2;`}
               >
                 <Grid
                   css={css`&>span{display: block;font-size: 3.8rem;line-height: 3.8rem;}`}
@@ -317,6 +317,7 @@ const Services = () => {
                     <Grid
                       item
                       css={css`margin-bottom: 1rem !important;display:flex;`}
+                      key={`${title}`}
                     >
                       <span
                         css={css`display: inline-block;background: url('${STATIC_IMAGE_PATH}${icon}') no-repeat 0 0;height: 2.8rem;width: ${width}rem;`}
@@ -366,6 +367,7 @@ const Services = () => {
         <Grid container spacing={2}>
           {TILES_LIST.map((i) => (
             <Slide
+              key={`${i.title}`}
               imgSrc={i.imgSrc}
               title={i.title}
               title1={i.title1}
@@ -375,13 +377,14 @@ const Services = () => {
               content={i.content}
             />
           ))}
-          <Grid sm={4}>
+          <Grid sm={4} item>
             <ScheduleAppointment />
           </Grid>
         </Grid>
         <Grid container spacing={2}>
           {TILES_LIST_2.map((i) => (
             <Slide
+              key={t.title}
               imgSrc={i.imgSrc}
               title={i.title}
               title1={i.title1}
@@ -430,6 +433,7 @@ const Services = () => {
           >
             {TILES_LIST_3.map((i) => (
               <Slide
+                key={i.title}
                 imgSrc={i.imgSrc}
                 title={i.title}
                 title1={i.title1}
