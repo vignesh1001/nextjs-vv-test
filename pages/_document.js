@@ -16,13 +16,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           ></link>
         </Head>
-        <body
-          css={css`
-                        margin-top: 0px;
-                        margin-left: 0px;
-                        margin-right: 0px;
-                    `}
-        >
+        <body css={css`margin-top: 0px;margin-left: 0px;margin-right: 0px;`}>
           <Main />
           <NextScript />
         </body>
