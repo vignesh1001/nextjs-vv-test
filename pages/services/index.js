@@ -332,6 +332,7 @@ const Services = () => {
                 css={css`margin-top: 3rem !important;max-width: 30rem !important;`}
               >
                 <Typography
+                  class="text-center hidden-xs hidden-sm"
                   variant={'h6'}
                   css={css`text-transform: uppercase;font-size: 1.8rem;line-height: 1.9rem;font-weight: bold;text-align: center;`}
                 >
